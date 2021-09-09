@@ -1,0 +1,40 @@
+# - Название меню
+nameInventory: 'Inventory'
+
+# - Предмет который будет выдаваться при входе
+itemDisplayName: 'Меню'
+itemMaterial: COMPASS
+
+# - Предметы
+spawn:
+ material: CHEST
+ name: "&aSpawn"
+ lore:
+    - " "
+    - "Отправит вас на спавн"
+rtp:
+ material: ENDER_PEARL
+ name: "&aRtp"
+ lore:
+    - " "
+    - "Телепортирует вас на рандомную точку"
+donate:
+ command: dm open donates_menu %player%
+ material: DIAMOND_BLOCK
+ name: "&aDonate"
+ lore:
+    - " "
+    - "&5Donate Menu"
+home:
+ material: BOOKSHELF
+ name: "&aHome"
+ lore:
+    - " "
+    - "&bТелепорт Домой"
+    
+# - Стекло
+glass:
+   material: BLACK_STAINED_GLASS_PANE
+   name: " "
+   lore: 
+      - " "

@@ -1,0 +1,32 @@
+# - Item - #
+
+unbreakable: false
+
+# - set displayName
+displayName: '&6&lGrabHook'
+
+# - set LoreName
+loreName:
+   # - description of item
+   descriptionString: 'With this Item you can attract yourself'
+   # - necessarily string with count
+   maxUsage: 3
+   maxUsageString: 'Usage: %maxUsage%'
+
+# - ConfigurationSpeed - #
+speed: 4
+speedY: 0.3
+
+# - Messages - #
+messages:
+   enable: true
+   ActionBarMessage: '&6&lYou have left %usages% uses'
+   ActionBarMessageBreak : '&c&lUppssss .. The rod broke)'
+
+# - Particles - #
+particles:
+   enable: true
+   whenHook: DAMAGE_INDICATOR
+   whenBroke: CLOUD
+ 
+# P.S: all particles are here - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
