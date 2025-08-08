@@ -1,4 +1,3 @@
-app = "factorio-server-manager"
 primary_region = "cdg"
 
 [build]
