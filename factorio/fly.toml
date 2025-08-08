@@ -1,0 +1,30 @@
+app = "factorio-server-manager"
+primary_region = "cdg"
+
+[build]
+  # If you push the wrapper image to a registry, set image=...
+  dockerfile = "Dockerfile"
+
+[env]
+  FACTORIO_VERSION = "stable"
+  # RCON_PASS via: fly secrets set RCON_PASS=yourpassword
+
+[[services]]
+  internal_port = 80
+  protocol = "tcp"
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+[[services]]
+  internal_port = 34197
+  protocol = "udp"
+  [[services.ports]]
+    port = 34197
+
+[[mounts]]
+  source = "factorio_opt"
+  destination = "/opt"
